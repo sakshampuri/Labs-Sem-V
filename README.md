@@ -9,3 +9,7 @@
 * ### ECSE352L - Crypto [![made-with-python](https://img.shields.io/badge/Made%20with-Python-1f425f.svg)](https://www.python.org/)
 
     Contains all the labs done for the cryptography course. 
+
+* ### ECSE341L - Image and Video Processing
+  
+    Contains all the labs for the Image and Video Processing course.
