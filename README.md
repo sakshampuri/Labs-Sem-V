@@ -6,6 +6,6 @@
 
     Contains all the **labs and data sets** used for the labs in the Machine Learning and Artificial Intelligence core course.
 
-### ECSE352L - Crypto [![made-with-python](https://img.shields.io/badge/Made%20with-Python-1f425f.svg)](https://www.python.org/)
+* ### ECSE352L - Crypto [![made-with-python](https://img.shields.io/badge/Made%20with-Python-1f425f.svg)](https://www.python.org/)
 
     Contains all the labs done for the cryptography course. 
