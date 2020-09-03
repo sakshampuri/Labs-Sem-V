@@ -1,0 +1,59 @@
+{% extends "bootstrap/base.html" %} {% block content %}
+
+<div class="container float-center">
+    <div class="row justify-content-center">
+  <div class="jumbotron">
+    <h2>Vigenere Cypher</h2>
+    <h3>Saksham Puri, E18CSE158</h3>
+    </div>
+  </div>
+
+  <form action="/" method="POST">
+    <div class="input-group" id="inputArea">
+      <div class="col-12">
+        <label for="text1">Enter the text to Encrypt/Decrpyt</label>
+        <input
+          type="text"
+          class="form-control"
+          id="inputText"
+          {% if text %}
+          placeholder={{ text }}
+          {% else %}
+           placeholder="Plain Text"
+          {% endif %}
+          name="text"
+        />
+      </div>
+      <div class="col-12">
+        <label for="Encrypt">Enter the key</label>
+        <input
+          type="text"
+          class="form-control"
+          id="inputText"
+          {% if key %}
+          placeholder={{ key }}
+          value = {{ key }}
+          {% else %}
+           placeholder="Key"
+          {% endif %}
+          name="key"
+        />
+      </div>
+    <input type="checkbox" name = "decrypt" class="form-check-input" >
+     <label class="form-check-label" for="exampleCheck1">Select this to decrypt</label>
+   </div>
+    <button type="submit" value="submit" class="btn btn-primary">
+      Submit!
+    </button>
+  </form>
+  {% if res %}
+  <div class="alert alert-warning alert-dismissible" role="alert">
+    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+      <span aria-hidden="true">&times;</span>
+    </button>
+    <strong>Result: </strong> {{ res }}
+  </div>
+  {% endif %}
+</div>
+
+{% endblock %}
