@@ -143,3 +143,5 @@ dmypy.json
 .DS_Store
 *.zip
 *.pdf
+Untitled.ipynb
+titanic.csv
