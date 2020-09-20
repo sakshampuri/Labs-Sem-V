@@ -75,12 +75,3 @@ class KeyGen:
         return u1 % m
 
 
-if __name__ == '__main__':
-    Generator = KeyGen(1024)
-    publicKey, privateKey = Generator.getKeys()
-    print(f'''
-    Public Key: {publicKey}
-    Length of Public Key: {len(str(publicKey[0]))}
-    Private Key: {privateKey}
-    Length of Private Key: {len(str(privateKey[0]))}
-    ''')
