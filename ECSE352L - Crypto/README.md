@@ -8,4 +8,9 @@ Features of the client is as follows:
 - Different cryptography algorithms and techiniques are used in communication
 - Specifics regarding the communication for that particular lab can be found inside the lab info file (.docx or .pdf)
 
+Here is how the front end looks:
+
+![Front End CNS](https://i.imgur.com/hYmNkVM.png)
+
+
 [Saksham Puri](https://sakshampuri.com)
