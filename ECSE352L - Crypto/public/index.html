@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<title>Cryptography Lab Assignment Client</title>
+		<link
+			rel="stylesheet"
+			href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+			integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+			crossorigin="anonymous"
+		/>
+	</head>
+	<header class="jumbotron jumbotron-fluid" style="height: 15rem;">
+		<div class="container">
+			<h1>CNS Sem 5 Labs Encryption Demo <span class="badge badge-primary">Lab 6</span></h1>
+			<hr />
+			<h5>Saksham Puri<br />E18CSE158</h5>
+			<br />
+		</div>
+	</header>
+	<body>
+		<div class="container">
+			<div class="card">
+				<div class="card-header text-center"><h6>Secured chat with server here</h6></div>
+				<div class="card-body overflow-auto" id="chatbox" style="height: 25rem">
+					<ul class="list-group list-group-flush" id="cbox-inner">
+					</ul>
+				</div>
+				<div class="card-footer">
+					<div class="input-group">
+						<div class="input-group-prepend">
+							<span class="input-group-text">Enter your message</span>
+						</div>
+						<textarea class="form-control" aria-label="With textarea" id="message"></textarea>
+
+						<a class="btn btn-primary m-3" id="sendMessage">Submit</a>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<script
+			src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+			integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+			crossorigin="anonymous"
+		></script>
+		<script
+			src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+			integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+			crossorigin="anonymous"
+		></script>
+		<script
+			src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+			integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+			crossorigin="anonymous"
+		></script>
+		<script src="./main.js"></script>
+	</body>
+</html>
