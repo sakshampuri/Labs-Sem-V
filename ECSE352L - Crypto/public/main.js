@@ -34,13 +34,19 @@ const addMessageToChatbox = (element) => {
 	container.scroll(0, 999999999);
 };
 
-ws.onmessage = (event) => {
-	data = event.data;
+const handler = (event) => {
+	data = event.data ? event.data : 'connection refused';
 	addMessageToChatbox(getMessageElement(data, 'Server'));
 };
 
+ws.onmessage = handler;
+
+ws.onerror = handler;
+
 const sendMessage = () => {
-	let message = document.getElementById('message').value;
+	let inputArea = document.getElementById('message');
+	let message = inputArea.value;
+	inputArea.value = '';
 	addMessageToChatbox(getMessageElement(message, 'Client'));
 };
 
